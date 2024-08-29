@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodômetro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hodômetro</h1>
+        <form id="kmForm">
+            <label for="name">Nome do Funcionário:</label>
+            <input type="text" id="name" required>
+            
+            <label for="kmInicial">Km Inicial:</label>
+            <input type="number" id="kmInicial" required>
+            
+            <label for="kmFinal">Km Final:</label>
+            <input type="number" id="kmFinal" required>
+            
+            <label for="litros">Litros de Gasolina:</label>
+            <input type="number" id="litros" step="0.01" required>
+            
+            <label for="media">Média do Carro:</label>
+            <input type="number" id="media" step="0.01" readonly>
+            
+            <button type="submit">Adicionar Registro</button>
+        </form>
+        <div id="historico">
+            <h2>Histórico</h2>
+            <ul id="historicoLista"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
